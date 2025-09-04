@@ -236,23 +236,6 @@ Result #1 (Score: 20.805)
   - Stopwords corpus for filtering
 - **Usage**: Text preprocessing and cleaning
 
-## Performance Characteristics
-
-### Search Speed
-- **Semantic Search**: ~100-200ms (vector similarity calculation)
-- **Keyword Search**: ~10-50ms (inverted index lookup)
-- **Hybrid Search**: ~200-300ms (combines both methods)
-
-### Memory Usage
-- **Embedding Storage**: ~1.5KB per profile (384 floats)
-- **Text Index**: ~2-5KB per profile
-- **Model Loading**: ~100MB (sentence transformer model)
-
-### Indexing Performance
-- **Processing Speed**: ~1000 profiles/second
-- **Batch Size**: 500 documents per bulk operation
-- **Memory Efficient**: Streams data without loading entire file
-
 ## Technical Decisions Explained
 
 ### Why OpenSearch?
